@@ -1,0 +1,20 @@
+@import '../../../base';
+
+main {
+    z-index: -1;
+    padding: 130px 50px 0;
+    width: 1100px;
+    text-align: center;
+    color: white;
+    line-height: 2;
+    margin-left: 120px;
+
+    h3{
+        font-family: $head-font;
+        color: $theme-color;
+    }
+
+    div {
+        margin-bottom: 40px;
+    }
+}

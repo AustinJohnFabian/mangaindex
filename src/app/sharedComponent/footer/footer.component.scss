@@ -1,0 +1,22 @@
+@import '../../../base';
+
+footer {
+    background-color: $primary-color;
+    padding: 20px;
+    margin-top: auto;
+
+    
+    ul{
+        padding-left: 280px;
+        li{
+            margin: 0 20px;
+            a{
+                color: $theme-color;
+            }
+
+        }
+    }
+    .dtl{
+        margin-left: 255px;
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../../base';
+
+main {
+    z-index: -1;
+    padding: 130px 30px 0;
+    margin-left: 150px;
+    text-align: center;
+    color: $primary-text-color;
+
+    h2{
+        font-family: $head-font;
+        color: $theme-color;
+    }
+
+    .info{
+        p{
+            margin-left: 300px;
+            width: 550px;
+            padding-top: 20px;
+        }
+        .container{
+            padding: 10px;
+            width: 400px;
+            color: $secondary-text-color;
+            .row{
+                padding-bottom: 10px;
+                a{
+                    color: $secondary-text-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+    .form{
+        width: 600px;
+        text-align: left;
+        padding: 10px;
+        margin-left: 275px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        background-color: rgba(12, 12, 12, 0.867);
+
+        .row{
+            padding: 10px;
+        }
+    }
+}

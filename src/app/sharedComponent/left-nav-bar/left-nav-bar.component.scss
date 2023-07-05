@@ -1,0 +1,44 @@
+@import '../../../base';
+
+.sidebar {
+    position: fixed;
+    width: 150px;
+    top: 81px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0;
+    background-color: transparent;
+
+    .top-button{
+        button{
+            border: 0 ;
+        }
+    }
+    button {
+
+        width: 150px;
+        background: $secondary-color;
+        border: none;
+        border-top: 1px solid $theme-color;
+        border-radius: 0%;
+        color: $theme-color;
+        padding: 15px 30px;
+        text-align: left;
+        font-weight: bold;
+
+        &:hover {
+            color: white;
+            background-color: $theme-color;
+            text-align: center;
+        }
+
+    }
+
+    .active{
+        color: $primary-text-color;
+        background-color: transparent;
+        font-weight: bold;
+        font-size: x-large;
+    }
+}

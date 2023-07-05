@@ -1,0 +1,27 @@
+<div>
+    <div class="overlay"></div>
+
+    <form action="#" method="get">
+        <div class="Headcont">
+            <app-logo></app-logo>
+            <h2>Log In</h2>
+        </div>
+        <div class="Maincont">
+            <label for="uname">Username</label><input type="text" id="userName" name="userName" [(ngModel)] = "userName" required="required" />
+            <label for="pswd">Password</label><input type="password" id="pswd" name="pswd" [(ngModel)] = "pswd" required="required" />
+
+            <div class="Subcont">
+                <label>
+                    <input type="checkbox" checked="checked" name="remb">Remeber me
+                </label>
+                <p class="frgt">Forgot your login detials? <a href="#">Get Help</a></p>
+            </div>
+            <button type="button" >Login</button>
+            <p class="reg">Don't have an account? <a routerLink="/signup">Sign Up</a></p>
+            <div>
+                {{ errMsg }}
+            </div>
+        </div>
+    </form>
+
+</div>

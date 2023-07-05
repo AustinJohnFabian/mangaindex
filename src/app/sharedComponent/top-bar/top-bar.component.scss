@@ -1,0 +1,56 @@
+@import '../../../base';
+
+.navbar {
+    position: fixed;
+    background-color: $primary-color;
+    right: 0;
+    left: 0;
+    height: 82px;
+
+    app-logo{
+        text-align: left;
+    }
+
+    form {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        margin-right: 140px;
+
+        input {
+            margin: 5px;
+            height: 37px;
+            text-align: center;
+            border-radius: 5px;
+
+            &:focus{
+                outline: 2px solid #800080 ;
+            }
+
+        }
+
+        button {
+            color: #800080;
+            border-color: #800080;
+            border-radius: 5px;
+        
+            &:hover {
+                color: white;
+                background-color: #800080;
+                border-color: #800080;
+            }
+        }        
+    }
+
+    .login button{
+        margin-right: 30px;
+        color: $theme-color;
+        background-color: black;
+        font-size: small;
+        border: 1px dotted black;
+
+        &:hover{
+            border: 1px dotted $theme-color;
+        }
+    }
+}

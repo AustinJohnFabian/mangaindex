@@ -1,0 +1,120 @@
+@import '../../../base';
+
+body {
+    font-family: sans-serif;
+    background: url('../../../assets/images/Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    opacity: 95%;
+}
+
+app-logo {
+    text-align: right;
+}
+
+form {
+    width: 35rem;
+    margin: auto;
+    color: antiquewhite;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(15, 0, 19, 0.452);
+    border-radius: 12px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 20px 25px;
+    margin-top: 25px;
+
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+}
+
+.Maincont .msg {
+    font-size: 12px;
+    color: rgb(153, 153, 107);
+}
+
+
+button {
+    background-color: #030804;
+    color: antiquewhite;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+button a {
+    color: antiquewhite;
+}
+
+button a:link {
+    text-decoration: none;
+}
+
+
+.Headcont h2 {
+    text-align: center;
+}
+
+.Maincont {
+    padding: 16px;
+}
+
+.Subcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Subcont a {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+span.frgt a {
+    float: right;
+    color: whitesmoke;
+    padding-top: 16px;
+}
+
+.frgt a {
+    color: rgb(74, 146, 235);
+}
+
+.frgt a:link {
+    text-decoration: none;
+}
+
+.reg {
+    color: white;
+    text-align: center;
+}
+
+.reg a {
+    color: rgb(74, 146, 235);
+}
+
+.reg a:link {
+    text-decoration: none;
+}

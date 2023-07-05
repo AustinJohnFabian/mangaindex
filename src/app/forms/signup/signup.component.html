@@ -1,0 +1,32 @@
+<div>
+    <div class="overlay"></div>
+
+    <form action="#" method="get">
+        <div class="Headcont">
+            <h1><i><u>Manga Index</u></i></h1>
+            <h2>Sign Up</h2>
+        </div>
+        <div class="Maincont">
+            <label for="name">Name</label><input type="text" id="name" name="name" [(ngModel)]= "name" (keyup)="nameVal()" 
+                placeholder="Enter Your Full Name" required="required">
+            <div class="msg">{{nameMsg}}</div>
+            <label for="uname">Username</label><input type="text" name="username" [(ngModel)]= "userName" (keyup)="unVal()" id="username" required="required">
+            <div class="msg">{{usrNameMsg}}</div>
+            <label for="email">Email</label><input type="email" name="email" [(ngModel)]= "email" (keyup)="emailVal()" id="email" required="required">
+            <div class="msg">{{emailMsg}}</div>
+            <label for="mobile">Mobile Number</label><input type="number" name="mobile" [(ngModel)]= "mobile" placeholder="Optional" (keyup)="mblVal()" id="mobile" required="required">
+            <div class="msg">{{mblMsg}}</div>
+            <label for="password">Password</label><input type="text" name="password" [(ngModel)]= "pswd" (keyup)="pswdVal()" id="pswd" required="required">
+            <div class="msg">{{pswdMsg}}</div>
+            <label for="cpassword">Confirm Password</label><input type="password" name="cpswd" [(ngModel)]= "cPswd" (keyup)="cPswdVal()"
+                id="cpswd" required="required">
+            <div class="msg">{{cPswdMsg}}</div>
+        </div>
+        <div>
+            <button type="button" (click)="signUp()">Sign Up</button>
+            {{msg}}
+            <p class="reg">Already have an account? <a routerLink="/login">Log In</a></p>
+        </div>
+    </form>
+
+</div>
