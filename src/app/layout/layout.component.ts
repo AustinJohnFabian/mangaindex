@@ -14,4 +14,11 @@ export class LayoutComponent {
 
     return currentUrl !== '/login' && currentUrl !== '/signup';
   }
+
+  isHomePage(): boolean {
+    const currentUrl = this.router.url;
+
+    return currentUrl == '/home';
+  }
+
 }

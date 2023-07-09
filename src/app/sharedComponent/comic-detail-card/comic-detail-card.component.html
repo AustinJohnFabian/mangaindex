@@ -1,0 +1,8 @@
+  <div class="comic-card">
+    <a [routerLink]="['/comic-info', comic.title]" (click)="navigateToComicDetails">
+      <img [src]="comic.imageUrl" alt="Comic Image">
+      <h5>{{ comic.title }}</h5>
+      <p>Rating: {{ comic.rating }}</p>
+      <p>Genre: {{ comic.genre }}</p>
+    </a>
+  </div>

@@ -8,88 +8,67 @@ body {
 
 .overlay {
     position: fixed;
+    z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000;
-    opacity: 95%;
-    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.904);
 }
 
-h1 {
-    text-align: right;
-    color: gray;
-}
-
-.Headcont h2 {
-    text-align: center;
-}
-
-form {
+.container {
     width: 35rem;
-    margin: auto;
-    color: antiquewhite;
-    backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(15, 0, 19, 0.452);
+    margin: 50px auto;
+    color: $secondary-text-color;
+    background-color: rgba(75, 2, 75, 0.616);
     border-radius: 12px;
-    border: 1px solid rgb(0, 0, 0);
-    padding: 20px 25px;
-    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid $theme-color;
+    line-height: 50px;
 
-}
+    app-logo {
+        text-align: right;
+    }
 
-input {
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 5px;
-    padding: 15px 18px;
-    box-sizing: border-box;
-}
+    h2 {
+        text-align: left;
+    }
 
-.Maincont .msg {
-    font-size: 12px;
-    color: rgb(153, 153, 107);
-}
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #ffd6dd;
+        height: 50px;
+    }
 
-button {
-    background-color: #030804;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 5px;
-    margin: 7px 0;
-    margin-left: 30%;
-    width: 40%;
-    font-size: 18px;
-}
+    .btn-primary {
+        background-color: $secondary-color;
+        border-color: $theme-color;
+        justify-content: center;
+        width: 30rem;
+        height: 45px;
+    }
 
-button:hover {
-    opacity: 0.6;
-    cursor: pointer;
-}
+    .btn-primary:hover {
+        background-color: $theme-color;
+        border-color: white;
+    }
 
-button a {
-    color: antiquewhite;
-}
+    a {
+        color: #eb4aa8;
 
-button a:link {
-    text-decoration: none;
-}
+        :link {
+            text-decoration: none;
+        }
+    }
 
+    .msg {
+        font-size: small;
+        color: rgb(153, 153, 107);
+    }
 
-.Maincont {
-    padding: 16px;
-}
-
-.reg {
-    color: white;
-    text-align: center;
-}
-
-.reg a {
-    color: rgb(74, 146, 235);
-}
-
-.reg a:link {
-    text-decoration: none;
+    .text-danger {
+        color: #dc3545;
+        margin-top: 10px;
+    }
 }

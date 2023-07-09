@@ -1,0 +1,26 @@
+<main role="main">
+  <div *ngIf="comic">
+    <img [src]="comic.imageUrl" alt="Comic Image">
+    <h2>{{ comic.title }}</h2>
+    <label> Description: </label> <p>{{ comic.description }}</p><br>
+    <label> Genre: </label> {{ comic.genre }} <br>
+    <label> Rating: </label> {{ comic.rating }} <br>
+    <label> Status: </label> {{ comic.status }} <br>
+
+    <label>Select Chapter </label>
+    <select>
+      <option value="Start" disabled selected hidden>Start</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select><br>
+    <button class="btn btn-btn-primary" routerLink="/read-manga"> Start Reading </button>
+  </div>
+
+  <div *ngIf="!comic">
+    <p>Comic not found.</p>
+  </div>
+</main>

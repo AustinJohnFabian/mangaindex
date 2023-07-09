@@ -1,0 +1,21 @@
+@import '../../../base';
+
+main {
+    z-index: -1;
+    padding: 130px 30px 0;
+    margin-left: 150px;
+    justify-content: center;
+    color: $secondary-text-color;
+
+    h2{
+        margin-left: 50px;
+        margin-bottom: 50px;
+        color: $primary-text-color;
+    }
+    .comic-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+}

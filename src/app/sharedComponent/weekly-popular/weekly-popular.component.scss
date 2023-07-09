@@ -1,0 +1,91 @@
+@import '../../../base';
+
+.weekly-popular-bar {
+    background-color: $secondary-color;
+    width: 300px;
+    border-radius: 20px;
+    position: fixed;
+    top: 90px;
+    margin-right: 15px;
+    right: 0;
+    padding: 10px;
+    height: auto;
+
+    h4{
+        padding: 5px 0;
+        color: $secondary-text-color;
+        position: fixed;
+        background-color: $secondary-color;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+  
+    ol {
+      list-style-type: none;
+      padding: 0;
+      counter-reset: item-counter;
+      margin-top: 60px;
+      overflow: auto;
+      height: 430px;
+      margin-left: 10px;
+
+  
+      li {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $primary-color;
+        padding: 10px 0;
+
+  
+        &:before {
+          content: counter(item-counter);
+          font-size: 25px;
+          font-weight: bold;
+          margin-right: 15px;
+          color: $theme-color;
+        }
+
+        a{
+          text-decoration: none;
+        }
+  
+        .comic-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          color: $primary-text-color;
+
+  
+          img {
+            width: 50px;
+            height: 75px;
+            margin-right: 10px;
+          }
+  
+          .comic-details {
+            flex: 1;
+  
+            h6 {
+              margin: 0;
+            }
+          }
+        }
+  
+        counter-increment: item-counter;
+      }
+    }
+
+    ol::-webkit-scrollbar {
+      width: 10px;
+      background-color: rgb(39, 38, 38);
+    }
+    
+    ol::-webkit-scrollbar-thumb {
+      background-color: $theme-color;
+    }
+    
+    ol::-webkit-scrollbar-thumb:hover {
+      background-color: rgb(204, 93, 204);
+    }
+  }
+  

@@ -1,0 +1,17 @@
+<div class="weekly-popular-bar">
+    <h4>Weekly Popular Comics</h4>
+    <ol>
+      <li *ngFor="let comic of popularComics">
+        <a [routerLink]="['/comic-info', comic.title]">
+        <div class="comic-item">
+          <img [src]="comic.imageUrl" alt="Comic Image">
+          <div class="comic-details">
+            <h6>{{ comic.title }}</h6>
+            <p>Rating: {{ comic.rating }}</p>
+          </div>
+        </div>
+        </a>
+      </li>
+    </ol>
+  </div>
+  

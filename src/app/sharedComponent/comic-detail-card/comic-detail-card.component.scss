@@ -1,0 +1,46 @@
+@import '../../../base';
+
+.comic-card{
+
+    justify-content: center;
+    width: 160px;
+    margin-bottom: 30px;
+    margin: 50px;
+    margin-top: auto;
+    transition: box-shadow 0.3s ease;
+
+
+    img{
+        width: 150px;
+        height: 200px;
+        margin-bottom: 10px;
+
+        
+    }
+
+    h5{
+        text-align: left;
+
+    }
+
+    p{
+        font-size: small;
+        line-height: 1;
+        text-align: left;
+
+    }
+
+    a{
+        color: $primary-text-color;
+        text-decoration: none;
+
+    }
+
+    :hover{
+        color: $secondary-text-color;
+        box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.568),
+        0 2px 4px rgb(0, 0, 0);
+}
+
+
+}

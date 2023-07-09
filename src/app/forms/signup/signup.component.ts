@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-signup',
@@ -31,7 +33,7 @@ export class SignupComponent {
 
 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router, private toastr: ToastrService) {}
 
   nameVal() {
     let nPtrn = /^[a-z A-Z]{3,20}$/;
@@ -141,8 +143,9 @@ export class SignupComponent {
     };
     this.http.post(url, reqObj).subscribe(
       () => {
-        this.msg = "User Registerd Successfully";
         this.resetUser();
+        this.router.navigate(['/login']);
+        alert('User Registerd Successfully')        
       },
       err => {
         this.msg = "Error Occured... please try again later!"

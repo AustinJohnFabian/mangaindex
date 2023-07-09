@@ -1,0 +1,40 @@
+@import '../../../base';
+
+main {
+    z-index: -1;
+    padding: 130px 30px 0;
+    margin-left: 200px;
+    justify-content: center;
+    width: 800px;
+    color: $primary-text-color;
+
+    img{
+        width: 200px;
+    }
+
+    h2{
+        color: $secondary-text-color;
+        padding: 20px;
+        padding-left: 0;
+    }
+
+    label{
+        padding-right: 20px;
+        padding-bottom: 10px;
+        color: $secondary-text-color;
+        font-size: large;
+    }
+    select{
+        background-color: $secondary-color;
+        color: $primary-text-color;
+        border: 0;
+        border-radius: 5px;
+    }
+    button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: $theme-color;
+        color: $secondary-text-color;
+
+    }
+}

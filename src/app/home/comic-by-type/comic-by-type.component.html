@@ -1,0 +1,8 @@
+<main role="main">
+
+  <h2>{{ type }}</h2>
+
+  <div class="comic-grid" >
+    <app-comic-detail-card *ngFor="let comic of comics" [comic]="comic"></app-comic-detail-card>
+  </div>
+</main>

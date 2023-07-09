@@ -28,7 +28,7 @@
         font-weight: bold;
 
         &:hover {
-            color: white;
+            color: $primary-text-color;
             background-color: $theme-color;
             text-align: center;
         }
@@ -36,7 +36,7 @@
     }
 
     .active{
-        color: $primary-text-color;
+        color: $secondary-text-color;
         background-color: transparent;
         font-weight: bold;
         font-size: x-large;

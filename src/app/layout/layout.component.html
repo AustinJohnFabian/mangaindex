@@ -6,6 +6,10 @@
 
         <app-left-nav-bar></app-left-nav-bar>
 
+        <div *ngIf="isHomePage()" class="weekly-bar">
+            <app-weekly-popular></app-weekly-popular>
+        </div>
+
         <router-outlet></router-outlet>
 
         <app-footer></app-footer>

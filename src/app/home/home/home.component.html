@@ -1,3 +1,41 @@
 <main role="main">
 
+  <div class="slideshow-container">
+    <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex">
+      <h2>{{slide.type}}</h2>
+      <a [routerLink]="['/comic-info', slide.title]">
+      <div class="slide-content">
+        <div class="img">
+          <img [src]="slide.imageUrl" alt="Comic Image">
+        </div>
+        <div class="dtl">
+          <h3>{{ slide.title }}</h3>
+          <p>{{ slide.description }}</p>
+          <p>{{ slide.rating }}</p>
+          <!-- Add your desired structure here -->
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="comics-box" *ngFor="let type of comicsByType">
+    <h2>{{ type.type }}</h2>
+    <div class="see-more-link">
+      <a [routerLink]="['/comics-by-type', type.type]">See More...</a>
+    </div>
+    <div class="comic-grid">
+      <div class="comic-card" *ngFor="let comic of type.comics">
+        <!-- Display comic details here -->
+        <a [routerLink]="['/comic-info', comic.title]">
+          <img [src]="comic.imageUrl" alt="Comic Image">
+          <h6>{{ comic.title }}</h6>
+          <p>Rating: {{ comic.rating }}</p>
+          <p>Genre: {{ comic.genre }}</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
 </main>

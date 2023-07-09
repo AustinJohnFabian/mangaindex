@@ -16,6 +16,15 @@ import { LeftNavBarComponent } from './sharedComponent/left-nav-bar/left-nav-bar
 import { LayoutComponent } from './layout/layout.component';
 import { LogoComponent } from './sharedComponent/logo/logo.component';
 import { FooterComponent } from './sharedComponent/footer/footer.component';
+import { ComicDetailCardComponent } from './sharedComponent/comic-detail-card/comic-detail-card.component';
+import { MangasService } from './manga collections/mangas.service';
+import { SearchComponent } from './home/search/search.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ComicInfoComponent } from './home/comic-info/comic-info.component';
+import { ComicByTypeComponent } from './home/comic-by-type/comic-by-type.component';
+import { UserService } from './service/user.service';
+import { WeeklyPopularComponent } from './sharedComponent/weekly-popular/weekly-popular.component';
 
 @NgModule({
   declarations: [
@@ -30,15 +39,26 @@ import { FooterComponent } from './sharedComponent/footer/footer.component';
     LeftNavBarComponent,
     LayoutComponent,
     LogoComponent,
-    FooterComponent
+    FooterComponent,
+    ComicDetailCardComponent,
+    SearchComponent,
+    ComicInfoComponent,
+    ComicByTypeComponent,
+    WeeklyPopularComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    
   ],
-  providers: [],
+  providers: [
+    MangasService,
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,9 +6,20 @@
     right: 0;
     left: 0;
     height: 82px;
+    z-index: +1;
 
     app-logo{
         text-align: left;
+    }
+
+    .profile{
+        color: $theme-color;
+        padding-right: 20px;
+
+        i{
+            padding: 10px;
+            color: $secondary-text-color;
+        }
     }
 
     form {

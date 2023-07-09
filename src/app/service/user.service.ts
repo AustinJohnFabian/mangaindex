@@ -1,19 +1,23 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { user } from '../models/user';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+  private user: any;
 
-  constructor(private httpclient: HttpClient) {}
+  constructor() {}
 
-    baseurl="http://localhost:5246/api/User";
+  setUser(user: any) {
+    this.user = user;
+  }
 
-    getUser() : Observable<user[]>{
-      return this.httpclient.get<user[]>(this.baseurl);
-    }
-   
+  getUser() {
+    return this.user;
+  }
+
+  clearUser() {
+    this.user = null;
+    // Perform any other necessary cleanup or logout logic
+  }
 }
